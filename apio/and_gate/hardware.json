@@ -9645,16 +9645,16 @@
       "attributes": {
         "hdlname": "\\and_gate",
         "top": "00000000000000000000000000000001",
-        "src": "and_gate.v:2.1-17.10"
+        "src": "and_gate.v:2.1-23.10"
       },
       "ports": {
         "pmod": {
           "direction": "input",
-          "bits": [ 2, 3 ]
+          "bits": [ 2, 3, 4 ]
         },
         "led": {
           "direction": "output",
-          "bits": [ 4, 4, 5, "x", "x" ]
+          "bits": [ 5, 6, "x", "x", "x" ]
         }
       },
       "cells": {
@@ -9662,11 +9662,11 @@
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
-            "LUT_INIT": "0000000000001111"
+            "LUT_INIT": "0011110011000011"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\IsamZ\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:17.34-18.52"
+            "src": "C:\\Users\\IsamZ\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:22.34-23.52"
           },
           "port_directions": {
             "I0": "input",
@@ -9677,21 +9677,21 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ 2 ],
-            "I3": [ 3 ],
-            "O": [ 5 ]
+            "I1": [ 2 ],
+            "I2": [ 3 ],
+            "I3": [ 4 ],
+            "O": [ 6 ]
           }
         },
-        "not_pmod_0_SB_LUT4_O": {
+        "led_SB_LUT4_O_1": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
-            "LUT_INIT": "0000000011111111"
+            "LUT_INIT": "0000001100111111"
           },
           "attributes": {
             "module_not_derived": "00000000000000000000000000000001",
-            "src": "C:\\Users\\IsamZ\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:12.34-13.52"
+            "src": "C:\\Users\\IsamZ\\APIO~1\\packages\\TOOLS-~3\\bin\\../share/yosys/ice40/cells_map.v:22.34-23.52"
           },
           "port_directions": {
             "I0": "input",
@@ -9702,31 +9702,24 @@
           },
           "connections": {
             "I0": [ "0" ],
-            "I1": [ "0" ],
-            "I2": [ "0" ],
-            "I3": [ 2 ],
-            "O": [ 4 ]
+            "I1": [ 2 ],
+            "I2": [ 3 ],
+            "I3": [ 4 ],
+            "O": [ 5 ]
           }
         }
       },
       "netnames": {
         "led": {
           "hide_name": 0,
-          "bits": [ 4, 4, 5, "x", "x" ],
+          "bits": [ 5, 6, "x", "x", "x" ],
           "attributes": {
             "src": "and_gate.v:8.15-8.18"
           }
         },
-        "not_pmod_0": {
-          "hide_name": 0,
-          "bits": [ 4 ],
-          "attributes": {
-            "src": "and_gate.v:11.7-11.17"
-          }
-        },
         "pmod": {
           "hide_name": 0,
-          "bits": [ 2, 3 ],
+          "bits": [ 2, 3, 4 ],
           "attributes": {
             "src": "and_gate.v:5.14-5.18"
           }

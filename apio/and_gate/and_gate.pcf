@@ -8,3 +8,4 @@ set_io				led[4]	95
 #pmod i/o
 set_io	-pullup yes pmod[0]	78
 set_io	-pullup yes pmod[1]	79
+set_io	-pullup yes pmod[2]	80
