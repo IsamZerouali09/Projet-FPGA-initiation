@@ -9648,29 +9648,17 @@
         "src": "and_gate.v:2.1-17.10"
       },
       "ports": {
-        "pmod_0": {
+        "pmod": {
           "direction": "input",
-          "bits": [ 2 ]
+          "bits": [ 2, 3 ]
         },
-        "pmod_1": {
-          "direction": "input",
-          "bits": [ 3 ]
-        },
-        "led_0": {
+        "led": {
           "direction": "output",
-          "bits": [ 4 ]
-        },
-        "led_1": {
-          "direction": "output",
-          "bits": [ 5 ]
-        },
-        "led_2": {
-          "direction": "output",
-          "bits": [ 5 ]
+          "bits": [ 4, 4, 5, "x", "x" ]
         }
       },
       "cells": {
-        "led_0_SB_LUT4_O": {
+        "led_SB_LUT4_O": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
@@ -9692,10 +9680,10 @@
             "I1": [ "0" ],
             "I2": [ 2 ],
             "I3": [ 3 ],
-            "O": [ 4 ]
+            "O": [ 5 ]
           }
         },
-        "led_1_SB_LUT4_O": {
+        "not_pmod_0_SB_LUT4_O": {
           "hide_name": 0,
           "type": "SB_LUT4",
           "parameters": {
@@ -9717,44 +9705,30 @@
             "I1": [ "0" ],
             "I2": [ "0" ],
             "I3": [ 2 ],
-            "O": [ 5 ]
+            "O": [ 4 ]
           }
         }
       },
       "netnames": {
-        "led_0": {
+        "led": {
+          "hide_name": 0,
+          "bits": [ 4, 4, 5, "x", "x" ],
+          "attributes": {
+            "src": "and_gate.v:8.15-8.18"
+          }
+        },
+        "not_pmod_0": {
           "hide_name": 0,
           "bits": [ 4 ],
           "attributes": {
-            "src": "and_gate.v:9.10-9.15"
+            "src": "and_gate.v:11.7-11.17"
           }
         },
-        "led_1": {
+        "pmod": {
           "hide_name": 0,
-          "bits": [ 5 ],
+          "bits": [ 2, 3 ],
           "attributes": {
-            "src": "and_gate.v:10.9-10.14"
-          }
-        },
-        "led_2": {
-          "hide_name": 0,
-          "bits": [ 5 ],
-          "attributes": {
-            "src": "and_gate.v:11.9-11.14"
-          }
-        },
-        "pmod_0": {
-          "hide_name": 0,
-          "bits": [ 2 ],
-          "attributes": {
-            "src": "and_gate.v:5.9-5.15"
-          }
-        },
-        "pmod_1": {
-          "hide_name": 0,
-          "bits": [ 3 ],
-          "attributes": {
-            "src": "and_gate.v:6.8-6.14"
+            "src": "and_gate.v:5.14-5.18"
           }
         }
       }
